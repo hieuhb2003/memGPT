@@ -1,0 +1,31 @@
+{
+  "session_1": [
+    {
+      "role": "user",
+      "content": "Dự án MemGPT này cần chạy local hoàn toàn nhé.",
+      "timestamp": "2024-01-15 09:00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Đã rõ. Tôi sẽ sử dụng SQLite và ChromaDB.",
+      "timestamp": "2024-01-15 09:00:05"
+    },
+    {
+      "role": "user",
+      "content": "Nhớ là không dùng Docker.",
+      "timestamp": "2024-01-15 09:01:00"
+    }
+  ],
+  "session_2": [
+    {
+      "role": "user",
+      "content": "Hãy tạo một agent có thể ghi nhớ cuộc trò chuyện.",
+      "timestamp": "2024-01-15 10:00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Tôi sẽ sử dụng hệ thống core memory và recall memory của MemGPT.",
+      "timestamp": "2024-01-15 10:00:10"
+    }
+  ]
+}

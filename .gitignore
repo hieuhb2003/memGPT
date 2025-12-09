@@ -42,3 +42,8 @@ data/
 project.md
 STATUS.md
 IMPLEMENTATION.md
+formatted_longmemeval.json
+longmemeval_s_cleaned.json
+locomo10 (1).json
+test_nested_format.json
+test_format_parser.py

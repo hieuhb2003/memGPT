@@ -30,10 +30,15 @@ class ChromaArchivalStorage(ArchivalStorage):
         self.collection_name = collection_name
 
         # Initialize ChromaDB client with persistent storage
-        self.client = chromadb.Client(Settings(
-            persist_directory=persist_directory,
-            anonymized_telemetry=False
-        ))
+        try:
+            # Try newer API (0.4.0+)
+            self.client = chromadb.PersistentClient(path=persist_directory)
+        except AttributeError:
+            # Fallback for older API
+            self.client = chromadb.Client(Settings(
+                persist_directory=persist_directory,
+                anonymized_telemetry=False
+            ))
 
         # Initialize embedding model
         self.embedding_model = SentenceTransformer(embedding_model)
