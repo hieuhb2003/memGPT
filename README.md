@@ -107,6 +107,17 @@ Example:
 python main.py --model gpt-3.5-turbo --max-tokens 4000
 ```
 
+
+### Ingestion
+
+```bash
+# This will create folders ./memgpt_data/conv-XX/memgpt.db etc.
+python batch_ingest_sessions.py \
+  --file formatted_longmemeval.json \
+  --db-path ./memgpt_data/memgpt.db \
+  --chroma-path ./memgpt_data/chroma
+```
+
 ### CLI Commands
 
 While running the interactive CLI:
